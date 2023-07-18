@@ -11,10 +11,35 @@ body{
 :root{
     --primary-color: #FF42A5;
     --secondary-color: #D84DC4;
+    --third-color:#0B0223;
+}
+.primary-btn{
+    padding: 20px 35px; 
+    border: 1px solid white;
+    border-radius: 48px; 
+    background-color: var(--primary-color);
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 400; 
+    font-style: normal;
+    text-transform: uppercase; 
+    margin-top: 15px;
+}
+.secondary-btn{
+    padding: 20px 35px; 
+    border-radius: 48px; 
+    background-color: #4EC5F7;
+    border: 1px solid white;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;  
+    margin-top: 15px;
 }
 /* Nav-bar styles*/
 
-nav{
+nav,.banner{
     display: flex;
     justify-content: space-between;
     margin: 0px 20px;
@@ -26,7 +51,7 @@ nav{
 }
 .navbar-logo h3{
     text-align: center;
-    font-size: 2.8em;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 .nav-title-header-span{
@@ -49,7 +74,35 @@ nav{
     width: 20px;
     height: 18px;   
 }
-
+/*banner Style*/
+.banner{
+    background-image: url('/images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+.banner-description{
+    padding: 150px 0px 0px 150px;
+}
+.banner-description h3{
+    color: var(--third-color);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+.banner-description h2{
+    color: var(--secondary-color);
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase; 
+    line-height: 0%;
+}
+.banner-description p{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: lowercase; 
+}
 
 /*Responsive for mobile*/
 
@@ -58,7 +111,24 @@ nav{
         flex-direction: column;
         align-items: center;
     }
-    
+    .banner{
+        flex-direction: column-reverse;
+        background-image: none;
+    }
+    .banner-description{ 
+        background-image: url('/images/Group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 0px;
+    }
+    .inner-banner-desc{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .banner-image img{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 /*Responsive for tablets*/
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -66,5 +136,22 @@ nav{
         flex-direction: column;
         align-items: center;
     }
-    
+    .banner{
+        flex-direction: column-reverse;
+        background-image: none;
+    }
+    .banner-description{ 
+        background-image: url('/images/Group\ 14.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 10px 50px 50px 50px;
+        text-align: center;
+    }
+    .inner-banner-desc{
+        
+    }
+    .banner-image img{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
