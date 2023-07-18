@@ -1,0 +1,70 @@
+/* font import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans:ital,wght@0,300;0,800;1,800&family=Work+Sans:wght@300;400;600;700;800&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+    --primary-color: #FF42A5;
+    --secondary-color: #D84DC4;
+}
+/* Nav-bar styles*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+.navbar-logo,.menu-items{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.navbar-logo h3{
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+.nav-title-header-span{
+    color: var(--primary-color);
+}
+.menu-items a{
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menu-item-follow {
+    background-color: #E7E6E9;
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.menu-item-follow img{
+    width: 20px;
+    height: 18px;   
+}
+
+
+/*Responsive for mobile*/
+
+@media screen and (max-width:576px) {
+    nav,.menu-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+/*Responsive for tablets*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav,.menu-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
