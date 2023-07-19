@@ -132,6 +132,40 @@ nav,.banner{
     width: 300px;
     height: 340px;
 }
+
+/*online play section*/
+.online-play-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-right: 25px;
+
+}
+.online-play-description{
+    padding: 180px 150px;
+}
+.online-play-description h3{
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+.online-play-desc-header{
+    color: var(--secondary-color);
+}
+.online-play-description p{
+    color: #534C64;
+    text-align: right;
+    font-weight: 400;
+    line-height: 30px;  
+}
+
+.online-play-img-2{
+       position: relative;
+       bottom: 27%;
+       right: 18%; 
+}
+
 /*Responsive for mobile*/
 
 @media screen and (max-width:576px) {
@@ -167,6 +201,31 @@ nav,.banner{
         width: 100%;
         height: 80%;        
     }
+    .online-play-section{
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 18px;
+    }
+    .online-play-description{
+        padding: 20px 20px;
+    }
+    .online-play-description h3{
+        text-align: center;
+    }
+    .online-play-description p{
+        text-align: center;
+    }
+    .online-play-img-1{
+       width: 90%;
+       height: 60%;
+       margin-left: 25px ;
+    }
+    .online-play-img-2{
+        width: 50%;
+        height: 30%;
+        bottom: 20%;
+        right: 5%;
+ }
 }
 /*Responsive for tablets*/
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -185,9 +244,7 @@ nav,.banner{
         padding: 10px 50px 50px 50px;
         text-align: center;
     }
-    .inner-banner-desc{
-        
-    }
+
     .banner-image img{
         width: 100%;
         margin: 0 auto;
@@ -204,4 +261,29 @@ nav,.banner{
         height: 80%;
         margin: 0 auto;
     }
+    .online-play-section{
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 18px;
+    }
+    .online-play-description{
+        padding: 20px 20px;
+    }
+    .online-play-description h3{
+        text-align: center;
+    }
+    .online-play-description p{
+        text-align: center;
+    }
+    .online-play-img-1{
+       width: 90%;
+       height: 60%;
+       margin-left: 25px ;
+    }
+    .online-play-img-2{
+        width: 50%;
+        height: 30%;
+        bottom: 20%;
+        right: 5%;
+ }
 }
