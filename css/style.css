@@ -192,6 +192,51 @@ nav,.banner{
     color: #FF42A5;
     border: 1px solid #FF42A5;
 }
+
+/*footer items*/
+footer{
+    height: 400px;
+    background-color: #0B0223;
+}
+.footer-logo{
+    justify-content: center;
+}
+.footer-secondary-menu,.footer-terms{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.footer-secondary-menu a,.footer-terms a{
+    text-decoration: none;
+    color: #FFF;;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+}
+.footer-social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.footer-social-icons img{
+    height: 30px;
+    width: 30px;
+}
+.footer-copyright p{
+    text-align: center;
+    color: #FFF;;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 200;
+    margin-top: 20px;
+}
+.footer-title-span{
+    color: #FFF;
+
+}
+
 /*Responsive for mobile*/
 
 @media screen and (max-width:576px) {
@@ -275,6 +320,38 @@ nav,.banner{
     padding: 0px;
   
 }
+.footer-secondary-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer-social-icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.footer-terms{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;  
+}
+footer{
+    height: 100%;
+}
 }
 /*Responsive for tablets*/
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -356,5 +433,37 @@ nav,.banner{
 .game-types:hover{
     padding: 0px;
   
+}
+.footer-secondary-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer-social-icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.footer-terms{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;  
+}
+footer{
+    height: 100%;
 }
 }
