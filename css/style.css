@@ -103,7 +103,35 @@ nav,.banner{
     font-weight: 500;
     text-transform: lowercase; 
 }
+/* Card video Section*/
 
+
+.games-video-section h2{
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.games-video-header-span{
+    color: var(--secondary-color);
+}
+.games-video-header-description{
+    color: #534C64;
+    text-align: center;
+    font-weight: 400;
+}
+.card-videos-collection{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.inner-card-videos-collection-img{
+    width: 300px;
+    height: 340px;
+}
 /*Responsive for mobile*/
 
 @media screen and (max-width:576px) {
@@ -129,6 +157,16 @@ nav,.banner{
         width: 100%;
         margin: 0 auto;
     }
+    .card-videos-collection{
+        text-align: center;
+        flex-direction: column; 
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .inner-card-videos-collection-img{
+        width: 100%;
+        height: 80%;        
+    }
 }
 /*Responsive for tablets*/
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -152,6 +190,18 @@ nav,.banner{
     }
     .banner-image img{
         width: 100%;
+        margin: 0 auto;
+    }
+    .card-videos-collection{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .inner-card-videos-collection-img{
+        width: 100%;
+        height: 80%;
         margin: 0 auto;
     }
 }
