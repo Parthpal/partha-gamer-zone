@@ -105,6 +105,7 @@ nav,.banner{
 }
 /* Card video Section*/
 
+
 .games-video-section h2{
     color: #0B0223;
     text-align: center;
@@ -127,9 +128,46 @@ nav,.banner{
     margin-left: 30px;
     margin-top: 20px;
 }
+
+/*card overlay*/
+
+.inner-card-videos-collection{
+    position: relative;
+    width: 100%;
+}
+.card-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 83.1%;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color:#E7E6E9 ;
+}
+.inner-card-videos-collection:hover .card-overlay {
+    opacity: .5;
+  }
+  .play-icon{
+    color: blue;
+    font-size: 20px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/************/
+
 .inner-card-videos-collection-img{
-    width: 300px;
-    height: 340px;
+    width: 100%;
+    height: auto;
 }
 
 /*online play section*/
@@ -166,13 +204,13 @@ nav,.banner{
 }
 .games-category-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
     width:100%;
     margin : 0 auto;
-    flex-wrap: wrap;
+    gap:20px;
     background-color: #FFF9FC;
-    width: 100%;
     height: 300px;
 }
 .game-types{
@@ -269,6 +307,9 @@ footer{
     .inner-card-videos-collection-img{
         width: 100%;
         height: 80%;        
+    }
+    .card-overlay{
+        height: 80%;
     }
     .online-play-section{
         flex-direction: column;
@@ -369,7 +410,6 @@ footer{
         padding: 10px 50px 50px 50px;
         text-align: center;
     }
-
     .banner-image img{
         width: 100%;
         margin: 0 auto;
@@ -385,6 +425,9 @@ footer{
         width: 100%;
         height: 80%;
         margin: 0 auto;
+    }
+    .card-overlay{
+        height: 80%;
     }
     .online-play-section{
         flex-direction: column;
